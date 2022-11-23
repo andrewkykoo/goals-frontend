@@ -1,5 +1,5 @@
 {
-  "proxy": "https://goals-api-seuh.onrender.com/api/goals",
+  "proxy": "https://goals-api-seuh.onrender.com",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
