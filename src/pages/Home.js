@@ -8,7 +8,9 @@ const Home = () => {
 
   useEffect(() => {
     const fetchGoals = async () => {
-      const response = await fetch("/api/goals");
+      const response = await fetch(
+        "https://goals-api-seuh.onrender.com/api/goals"
+      );
       const json = await response.json();
 
       if (response.ok) {
