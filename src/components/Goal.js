@@ -17,9 +17,12 @@ const Goal = ({ goal }) => {
   const { dispatch } = useGoalsContext();
 
   const handleClick = async () => {
-    const response = await fetch("/api/goals/" + goal._id, {
-      method: "DELETE",
-    });
+    const response = await fetch(
+      "https://goals-api-seuh.onrender.com/api/goals/" + goal._id,
+      {
+        method: "DELETE",
+      }
+    );
 
     const json = await response.json();
 

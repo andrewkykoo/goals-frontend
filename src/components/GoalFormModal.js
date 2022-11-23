@@ -31,13 +31,16 @@ const GoalFormModal = () => {
 
     const goal = { subject, description, deadline };
 
-    const response = await fetch("/api/goals", {
-      method: "POST",
-      body: JSON.stringify(goal),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await fetch(
+      "https://goals-api-seuh.onrender.com/api/goals",
+      {
+        method: "POST",
+        body: JSON.stringify(goal),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     const json = await response.json();
 
