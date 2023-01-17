@@ -28,16 +28,8 @@ const Home = () => {
           <Box>
             <Alert status="warning">
               <AlertIcon />
-              Connecting to database.. may need to refresh several times
+              Connecting to database...it may take up to 20 seconds
             </Alert>
-            <Box mt={5}>
-              <Center>
-                <span>
-                  Press <Kbd>F5</Kbd> or <Kbd>command</Kbd>/<Kbd>control</Kbd> +{" "}
-                  <Kbd>r</Kbd> to refresh the page
-                </span>
-              </Center>
-            </Box>
           </Box>
           <Box mt={5}>
             <Center>
