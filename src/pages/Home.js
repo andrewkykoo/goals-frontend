@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Goal from "../components/Goal";
 import { useGoalsContext } from "../hooks/useGoalsContext";
-import { Box, Spinner, Kbd, Center, Alert, AlertIcon } from "@chakra-ui/react";
+import { Box, Spinner, Center, Alert, AlertIcon } from "@chakra-ui/react";
 
 const Home = () => {
   const { goals, dispatch } = useGoalsContext();
@@ -26,9 +26,9 @@ const Home = () => {
       ) : (
         <>
           <Box>
-            <Alert status="warning">
+            <Alert status="info">
               <AlertIcon />
-              Connecting to database...it may take up to 20 seconds
+              Connecting to database... may take up to 15 seconds
             </Alert>
           </Box>
           <Box mt={5}>
