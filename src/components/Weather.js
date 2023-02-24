@@ -54,7 +54,11 @@ const Weather = () => {
           </HStack>
         </>
       ) : (
-        <div>Loading weather data...</div>
+        <div>
+          <Text>Loading weather data...</Text>
+          <Text>Please allow the browser to share</Text>
+          your location
+        </div>
       )}
     </div>
   );
